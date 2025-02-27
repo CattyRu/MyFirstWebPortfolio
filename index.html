@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="styles/home_page.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class='logos_icons'>
+          <div class='logos'>
+            <h1 class="noiro">Noiro The Fox</h1>
+            <h1 class="muv">@maslovauv</h1>
+          </div>
+          <div class='icons'>
+            <div class="noiro">
+              <a href='#' target='_blank'> <img src="images/instagram_icon.png" alt="instagram"> </a>
+              <a href='#' target='_blank'> <img src="images/telegram_icon.png" alt="instagram"> </a>
+              <a href='#' target='_blank'> <img src="images/vk_icon.png" alt="instagram"> </a>
+            </div>
+            <div class="muv">
+              <a href='#' target='_blank'> <img src="images/instagram_icon.png" alt="instagram"> </a>
+              <a href='#' target='_blank'> <img src="images/telegram_icon.png" alt="instagram"> </a>
+              <a href='#' target='_blank'> <img src="images/github_icon.png" alt="instagram"> </a>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <button>об авторе</button>
+          <div class="dropdown_block">
+            <button class='dropdown'>портфолио</button>
+              <div class='dropdown_content'>
+                <button>разработчика</button>
+                <button>художника</button>
+              </div>
+          </div>
+          <button>блог</button>
+        </nav>
+      </div>
+      
+    </header>
+
+    <main>
+      <!-- welcome block -->
+      <section class='container welcomeblock'>
+        <div class='welcometext'>
+          <h4 class='text'>Добро пожаловать на личную страничку Юлии Масловой. Я ещё не волшебник, я только учусь веб-разработке и дизайну.</h4>
+          <h3 class='text'>Возьму в вёрстку Ваш дизайн, помогу с разработкой  дизайна Вашей идеи в качестве учебного проекта. Кроме того, я могу нарисовать Вам логотип или картинку:)</h3>
+          <h4 class='text'>Сейчас занимаюсь версткой многостраничных сайтов для ПК и мобильных устройств, рассматриваю адаптивные сайты. Этот сайт-визитка полностью придуман, свёрстан и опубликован мной. 
+          <br>
+          Для его создания я изучила HTML, CSS, принципы UX/UI дизайна, основы SEO продвижения.</h4>
+        </div>
+        <div class="welcomeimage">
+          <!-- for image :) -->
+        </div>
+      </section>
+
+      <section class='container aboutmeblock'>
+        <div class="abouttext">
+          <h2>Обо мне</h2>
+            <p class='text'>Мой путь как программиста начался с работы инженером-конструктором в только зародившейся на предприятии лаборатории. Для проведения необходимых тестов требовались дорогостоящие методики и оборудование, поэтому мы должны были изучить предложение и создать собственные аналоги. <br>
+            Для сборки тестового оборудования я занялась программированием микроконтроллеров Arduino на одноименном языке, основанном на C/C++. <br>
+            Тогда же нам потребовались приложения для автоматизации обработки маленьких и больших данных. Сделать это нам, кодившим только на учебном Pascal ABC, позволил Python с множеством библиотек для чтения и записи файлов, обработки изображений, создания графических интерфейсов. <br>
+            Чуть позже наш фокус сместился с лаборатории на обработку больших данных, для чего я изучила SQL, в особенности часто мы работали с базами данных PostgreSQL и ClickHouse. Для этого мы так же приспособили Python с его библиотеками sqlalchemy и clickhouse-connect.
+            Однако разработка приложений увлекла меня значительно больше проектирования структур хранения данных и их обработки. Куда же мне податься, зная только Python? Как выяснилось, в большом мире Python используют в основном для backend разработки. Что ж, сайты это тоже очень интересно. <br>
+            Так я встала на путь fullstack разработчика, который потребовал от меня изучить frontend разработку и веб-дизайн.</p>
+            <p class='text'>Что до рисования... Красивые, лаконичные изображения, природная красота, старинная и новомодная архитектура привлекали меня ещё в детстве. Окончив три курса художественной школы, победив в паре конкурсов, я так и не нашла себе дело жизни в этой области.  <br>
+            Но к поступлению в университет я точно знала, куда пойду: полиграфия. Моя специальность в основном была создана для изучения механизмов и электроники, технологии печати. Однако был в ней уклон в дизайн этикеток, печатных изданий. И в программирование, конечно.</p>
+        </div>
+        <div class="aboutimage">
+          <!-- for image :) -->
+        </div>
+      </section>
+
+      <section class='container portfolio'>
+        <h2>Портфолио</h2>
+        <section class='developersportfolio'>
+          <h3>Разработчика</h3>
+          <p>Здесь собраны примеры моих работ в веб-разработке и разработке приложений, а так же показательные кусочки кода. С кодом некоторых приложений и сайтов Вы сможете ознакомиться на моём Github. На страничках данных работ будет отдельная ссылка на репозиторий.</p>
+          <section class='carousel'>
+            <ol class='carousel__viewport'>
+              <li class='slide' id='slide1'>
+                <a href="#">
+                  <p>Веб-сайты</p>
+
+                </a>
+              </li>
+              <li class='slide' id='slide2'>
+                <a href="#">
+                  <div class="slide__content">
+                    <p>Вся информация</p>
+                    <img src="images/instagram_icon.png" alt="">
+                  </div>
+                </a>
+              </li>
+              <li class='slide' id='slide3'>
+                <a href="#">
+                  <p>Мой топ работ</p>
+                  
+                </a>
+              </li>
+              <li class='slide' id='slide4'>
+                <a href="#">
+                  <p>Игры</p>
+                  
+                </a>
+              </li>
+              <li class='slide' id='slide5'>
+                <a href="#">
+                  <p>Другое</p>
+                  
+                </a>
+              </li>
+            </ol>
+          </section>
+        </section>
+        <section class='artistsportfolio'>
+          <h3>Дизайнера и художника</h3>
+          <p>Здесь собраны мои работы в области художественного искусства. Веб-дизайн, логотипы, мои любимые художественные работы и ссылки на соц.сети, где вы сможете увидеть больше моих работ и узнать больше обо мне.</p>
+
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <!-- footer :) -->
+    </footer>
+  </body>
+</html>

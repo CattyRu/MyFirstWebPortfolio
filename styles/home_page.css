@@ -1,0 +1,157 @@
+/* базовые элементы */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --purple: #AC94E0;
+  --max_width: 1200px;
+}
+
+body {
+  margin: 0;
+  padding: 20px 50px;
+  background-color: black;
+  color: white;
+}
+
+
+/* общие элементы */
+.container {
+  max-width: var(--max_width);
+
+  /* border: 2px dotted;
+  border-color: #AC94E0; */
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+/* header :) */
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+  /* text logos + icons */
+  .logos_icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .logos {
+    margin-right: 20px;
+    color: var(--purple);
+    white-space: nowrap;
+  }
+
+  .icons img {
+    height: 30px;
+    background-color: white;
+  }
+
+  /* menu */
+  nav {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    align-items: center;
+  }
+
+  .dropdown_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+    /* dropdown portfolio dinamic */
+    .dropdown_content {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+    }
+
+    .dropdown_content button {
+      display: none;
+      flex-direction: column-reverse;
+    }
+
+    .dropdown_block:hover .dropdown_content button {
+      display: flex;
+    }
+  
+  nav button {
+    border: none;
+    color: #AC94E0;
+    background-color: #000000;
+    margin-left: 35px;
+  }
+
+  nav button:hover {
+    color: white;
+  }
+
+/* main */
+main {
+  max-width: var(--max_width);
+  justify-self: center;
+}
+
+  /* welcome block */
+  .welcometext {
+    width: 65%;
+    justify-self: left;
+  }
+
+  /* about me block */
+  .abouttext {
+    width: 65%;
+    justify-self: right;
+  }
+
+  /* portfolio block */
+  .carousel__viewport {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .slide {
+    position: relative;
+    background-color: white;
+    color: black;
+    min-width: 30%;
+    margin-right: 5%;
+  }
+
+  .slide__content {
+    justify-items: center;
+    justify-self: center;
+  }
+
+  .slide__content img {
+    width: 100%;
+  }
+
