@@ -11,7 +11,7 @@ html {
 }
 
 :root {
-  --purple: #AC94E0;
+  --acsent_color: #AC94E0;
   --max_width: 1200px;
 }
 
@@ -28,7 +28,7 @@ body {
   max-width: var(--max_width);
 
   /* border: 2px dotted;
-  border-color: #AC94E0; */
+  border-color: var(--acsent_color); */
 }
 
 ol, li {
@@ -39,7 +39,33 @@ ol, li {
 
 .text {
   margin-top: 10px;
-  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+a {
+  color: black;
 }
 
 
@@ -63,7 +89,7 @@ header .container {
 
   .logos {
     margin-right: 20px;
-    color: var(--purple);
+    color: var(--acsent_color);
     white-space: nowrap;
   }
 
@@ -104,7 +130,7 @@ header .container {
   
   nav button {
     border: none;
-    color: #AC94E0;
+    color: var(--acsent_color);
     background-color: #000000;
     margin-left: 35px;
   }
@@ -120,9 +146,15 @@ main {
 }
 
   /* welcome block */
+  .welcomeblock {
+    min-height: 300px;
+    align-content: center;
+  }
+
   .welcometext {
     width: 65%;
     justify-self: left;
+    
   }
 
   /* about me block */
@@ -132,6 +164,11 @@ main {
   }
 
   /* portfolio block */
+  .carousel {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
   .carousel__viewport {
     display: flex;
     width: 100%;
@@ -155,3 +192,32 @@ main {
     width: 100%;
   }
 
+  .right__blind {
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(270deg, black 20%, transparent);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .left__blind {
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(90deg, black 20%, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
