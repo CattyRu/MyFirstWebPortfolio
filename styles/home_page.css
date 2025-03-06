@@ -167,12 +167,12 @@ main {
   .carousel {
     position: relative;
     margin-bottom: 30px;
+    overflow: hidden;
   }
 
   .carousel__viewport {
     display: flex;
     width: 100%;
-    overflow-x: scroll;
   }
 
   .slide {
@@ -190,6 +190,7 @@ main {
 
   .slide__content img {
     width: 100%;
+    height: 100px;
   }
 
   .right__blind {
@@ -200,6 +201,7 @@ main {
     top: 0;
     right: 0;
   }
+
   .left__blind {
     width: 30%;
     height: 100%;
@@ -207,6 +209,26 @@ main {
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  .right__blind .btn_next,
+  .left__blind .btn_prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    background-color: #fff;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  .right__blind .btn_next {
+    right: calc(10% - 25px);
+  }
+
+  .left__blind .btn_prev {
+    left: calc(10% - 25px);
+    transform: rotate(180deg);
   }
 
 /* footer */
